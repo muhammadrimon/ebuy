@@ -1,0 +1,26 @@
+@import "variables";
+// variables import;
+
+@mixin open-r {
+  font-family: $ff1;
+  font-weight: 400;
+}
+
+// opensans font;
+
+@mixin rale-r {
+  font-family: $ff2;
+  font-weight: 400;
+}
+
+@mixin rale-md {
+  font-family: $ff2;
+  font-weight: 500;
+}
+
+@mixin rale-b {
+  font-family: $ff2;
+  font-weight: 700;
+}
+
+// raleway font;

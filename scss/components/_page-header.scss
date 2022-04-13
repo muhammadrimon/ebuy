@@ -1,0 +1,53 @@
+@import "../variables";
+@import "../mixin";
+@import "../fonts";
+
+// partials import done;
+
+header {
+  background: $hbg;
+  ul {
+    display: flex;
+    li {
+      color: $light !important;
+      padding: 0 20px !important;
+      @include open-r;
+      font-size: 13px;
+      line-height: 50px;
+      button {
+        color: $light !important;
+        @include open-r;
+        font-size: 13px !important;
+      }
+      a {
+        color: $light;
+        @include trans(0.4s);
+        &:hover {
+          color: $brand;
+        }
+      }
+    }
+  }
+  .header-left {
+    ul {
+      li {
+        &:first-child {
+          padding-left: 0px !important;
+        }
+      }
+    }
+  }
+  .header-right {
+    ul {
+      li {
+        &:last-child {
+          padding-right: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+/* =============================
+page top ends
+=============================== */

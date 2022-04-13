@@ -19,3 +19,44 @@ img {
 /* ========================
 common css ends
 ========================= */
+header {
+  background: #444444;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  color: #dddddd !important;
+  padding: 0 20px !important;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 50px;
+}
+header ul li button {
+  color: #dddddd !important;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px !important;
+}
+header ul li a {
+  color: #dddddd;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+}
+header ul li a:hover {
+  color: #de4644;
+}
+header .header-left ul li:first-child {
+  padding-left: 0px !important;
+}
+header .header-right ul li:last-child {
+  padding-right: 0 !important;
+}
+
+/* =============================
+page top ends
+=============================== */
