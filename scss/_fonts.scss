@@ -6,6 +6,12 @@
   font-weight: 400;
 }
 
+@mixin open-light {
+  font-family: $ff1;
+  font-weight: 300;
+  font-style: italic;
+}
+
 // opensans font;
 
 @mixin rale-r {

@@ -7,3 +7,29 @@
 }
 
 // transition mixin;
+
+@mixin btn40 {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+@mixin btn50 {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+@mixin border-light {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+@mixin border-dark {
+  color: #222;
+  border: 1px solid #222;
+}
+
+// btn mixin;

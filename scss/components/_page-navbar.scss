@@ -1,0 +1,71 @@
+@import "../variables";
+@import "../mixin";
+@import "../fonts";
+
+.navbar {
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        display: inline;
+        line-height: 110px;
+        @include rale-md;
+        font-size: 16px;
+        color: $cldark;
+        padding: 0 10px !important;
+        @include trans(0.4s);
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 0px;
+          height: 1px;
+          background: $brand;
+          bottom: -10px;
+          left: 10px;
+          @include trans(0.4s);
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0px;
+          height: 1px;
+          background: $brand;
+          bottom: -13px;
+          left: 10px;
+          @include trans(0.4s);
+        }
+
+        &.active,
+        &:hover {
+          color: $brand;
+          &::before {
+            width: 23px;
+          }
+          &::after {
+            width: 11px;
+          }
+        }
+      }
+    }
+  }
+
+  form {
+    button {
+      i {
+        font-size: 16px;
+        color: $hbg;
+      }
+    }
+    .card-info {
+      @include rale-md;
+      font-size: 16px;
+      color: $brand;
+      margin-left: 36px;
+    }
+  }
+}
+
+/* ====================
+navbar css ends
+====================== */

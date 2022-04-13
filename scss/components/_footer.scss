@@ -1,0 +1,121 @@
+@import "../variables";
+@import "../mixin";
+@import "../fonts";
+
+footer {
+  .footer-main {
+    background: $fbg;
+    padding-bottom: 60px;
+    .footer-item {
+      h2 {
+        @include rale-md;
+        font-size: 16px;
+        padding-top: 80px;
+        padding-bottom: 38px;
+      }
+      ul {
+        li {
+          font-size: 14px;
+          color: $light;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+          a {
+            color: $light;
+            @include trans(0.4s);
+            &:hover {
+              color: $brand;
+            }
+          }
+        }
+      }
+    }
+    .footer-logo {
+      img {
+        padding-top: 60px;
+        padding-bottom: 23px;
+      }
+      ul {
+        li {
+          line-height: 24px;
+          &:first-child {
+            padding-bottom: 25px;
+          }
+        }
+      }
+    }
+    .footer-contact {
+      ul {
+        li {
+          line-height: 24px;
+          margin-bottom: 17px;
+          span {
+            display: inline-block;
+            width: 36px;
+            i {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .footer-links {
+      ul {
+        li {
+          line-height: 30px;
+          a {
+            @include trans(0.4s);
+            &:hover {
+              padding-left: 10px;
+            }
+          }
+        }
+      }
+    }
+    .footer-form {
+      form {
+        input {
+          line-height: 40px;
+          width: 270px;
+          @include open-light;
+          padding-left: 10px !important;
+        }
+        button {
+          @include rale-md;
+          font-size: 16px;
+          width: 100px;
+          line-height: 40px !important;
+          background: $brand;
+        }
+      }
+      h6 {
+        padding-top: 25px;
+        padding-bottom: 20px;
+      }
+      .social {
+        a {
+          margin-right: 25px;
+          &:last-of-type {
+            margin-right: 0;
+          }
+          i {
+            @include btn40;
+            border-radius: 50%;
+            color: $cldark;
+            font-size: 20px;
+            background: #fff;
+            @include trans(0.4s);
+            &:hover {
+              background: $brand;
+              color: #fff;
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* ============================
+footer css ends
+============================= */

@@ -19,9 +19,7 @@ img {
 /* ========================
 common css ends
 ========================= */
-
-@import "variables";
-@import "mixin";
-@import "fonts";
 @import "components/page-header";
+@import "components/page-navbar";
+@import "components/footer";
 // import partials;

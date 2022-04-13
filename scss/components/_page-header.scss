@@ -10,10 +10,11 @@ header {
     display: flex;
     li {
       color: $light !important;
-      padding: 0 20px !important;
+      padding: 0 10px !important;
       @include open-r;
       font-size: 13px;
       line-height: 50px;
+      border-right: 1px solid $light;
       button {
         color: $light !important;
         @include open-r;
@@ -34,6 +35,9 @@ header {
         &:first-child {
           padding-left: 0px !important;
         }
+        &:last-child {
+          border-right: none;
+        }
       }
     }
   }
@@ -43,11 +47,14 @@ header {
         &:last-child {
           padding-right: 0 !important;
         }
+        &:last-child {
+          border-right: none;
+        }
       }
     }
   }
 }
 
 /* =============================
-page top ends
+header css ends
 =============================== */
