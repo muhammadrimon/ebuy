@@ -243,6 +243,21 @@ footer .footer-main .footer-form .social a i:hover {
   color: #fff;
   transform: scale(1.1);
 }
+footer .footer-copy {
+  background: #555555;
+}
+footer .footer-copy .copy-text p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 55px;
+}
+footer .footer-copy .copy-text p a {
+  color: #de4644;
+}
+footer .footer-copy .copy-image {
+  padding-top: 10px;
+}
 
 /* ============================
 footer css ends

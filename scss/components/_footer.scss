@@ -115,6 +115,22 @@ footer {
       }
     }
   }
+  .footer-copy {
+    background: $fcopy;
+    .copy-text {
+      p {
+        @include open-r;
+        font-size: 14px;
+        line-height: 55px;
+        a {
+          color: $brand;
+        }
+      }
+    }
+    .copy-image {
+      padding-top: 10px;
+    }
+  }
 }
 /* ============================
 footer css ends
