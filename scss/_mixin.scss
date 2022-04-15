@@ -8,6 +8,13 @@
 
 // transition mixin;
 
+@mixin btn30 {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
 @mixin btn40 {
   width: 40px;
   height: 40px;
@@ -33,3 +40,17 @@
 }
 
 // btn mixin;
+
+@mixin before {
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: $over70;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+}
+
+// before;

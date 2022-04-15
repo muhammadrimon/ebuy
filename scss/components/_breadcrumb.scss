@@ -1,0 +1,33 @@
+@import "../variables";
+@import "../mixin";
+@import "../fonts";
+
+// partials import done;
+
+#breadcrumb {
+  background: url(../../images/breadcrumb/breadcrumb.jpg) no-repeat center / cover;
+  position: relative;
+  z-index: 1;
+  @include before;
+  padding: 70px 0;
+  .bread-text {
+    h5 {
+      @include rale-md;
+      font-size: 24px;
+    }
+    a {
+      @include rale-r;
+      font-size: 18px;
+      &:last-child {
+        color: $brand;
+      }
+    }
+    i {
+      font-size: 15px;
+    }
+  }
+}
+
+/* ==========================
+breadcrumb css ends;
+=========================== */
