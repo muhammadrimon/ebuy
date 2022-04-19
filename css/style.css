@@ -212,6 +212,7 @@ footer .footer-main .footer-form form button {
   width: 100px;
   line-height: 40px !important;
   background: #de4644;
+  color: #dddddd;
 }
 footer .footer-main .footer-form h6 {
   padding-top: 25px;
@@ -297,3 +298,111 @@ footer css ends
 /* ==========================
 breadcrumb css ends;
 =========================== */
+#contactForm {
+  padding-top: 107px;
+  padding-bottom: 100px;
+}
+#contactForm h5 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #222222;
+  margin-bottom: 30px !important;
+}
+#contactForm .contact-form form {
+  position: relative;
+}
+#contactForm .contact-form form .input-item {
+  margin-bottom: 10px;
+}
+#contactForm .contact-form form .input-item input {
+  height: 30px;
+  border-color: #353535;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #777777;
+}
+#contactForm .contact-form form .input-item textarea {
+  height: 150px;
+  border-color: #353535;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #777777;
+  resize: none;
+}
+#contactForm .contact-form form .text-area {
+  margin-bottom: 0;
+}
+#contactForm .contact-form form button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #de4644;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+#contactForm .contact-form form button i {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 24px;
+  position: relative;
+  left: 15px;
+  top: 15px;
+}
+#contactForm .contact-details p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #444444;
+  line-height: 24px;
+}
+#contactForm .contact-details ul {
+  margin-top: 20px;
+}
+#contactForm .contact-details ul li {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #444444;
+  line-height: 24px;
+  margin-bottom: 14px;
+}
+#contactForm .contact-details ul li:last-child {
+  margin-bottom: 0;
+}
+#contactForm .contact-details ul li a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #444444;
+}
+#contactForm .contact-details ul li span {
+  width: 35px;
+}
+#contactForm .contact-details ul li span i {
+  color: #de4644;
+  font-size: 14px;
+}
+
+#contactMap {
+  position: relative;
+}
+#contactMap iframe {
+  filter: grayscale(1);
+}
+#contactMap .icon {
+  position: absolute;
+  top: 24%;
+  left: 47%;
+}
+#contactMap .icon i {
+  font-size: 70px;
+  color: #de4644;
+}
+
+/* ========================
+contactForm css ends
+========================= */

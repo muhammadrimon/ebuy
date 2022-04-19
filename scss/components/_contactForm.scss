@@ -1,0 +1,124 @@
+@import "../variables";
+@import "../mixin";
+@import "../fonts";
+
+// partials input done;
+
+#contactForm {
+  padding-top: 107px;
+  padding-bottom: 100px;
+
+  h5 {
+    @include rale-md;
+    font-size: 20px;
+    color: $cldark;
+    margin-bottom: 30px !important;
+  }
+
+  .contact-form {
+    form {
+      position: relative;
+      .input-item {
+        margin-bottom: 10px;
+        input {
+          height: 30px;
+          border-color: $fbg;
+          @include open-r;
+          font-size: 14px;
+          color: $formcl;
+        }
+        textarea {
+          height: 150px;
+          border-color: $fbg;
+          @include open-r;
+          font-size: 14px;
+          color: $formcl;
+          resize: none;
+        }
+      }
+
+      .text-area {
+        margin-bottom: 0;
+      }
+
+      button {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background: $brand;
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+        i {
+          width: 80px;
+          height: 80px;
+          line-height: 80px;
+          text-align: center;
+          font-size: 24px;
+          position: relative;
+          left: 15px;
+          top: 15px;
+        }
+      }
+    }
+  }
+
+  .contact-details {
+    p {
+      @include open-r;
+      font-size: 14px;
+      color: $hbg;
+      line-height: 24px;
+    }
+
+    ul {
+      margin-top: 20px;
+
+      li {
+        @include open-r;
+        font-size: 14px;
+        color: $hbg;
+        line-height: 24px;
+        margin-bottom: 14px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          @include open-r;
+          font-size: 14px;
+          color: $hbg;
+        }
+
+        span {
+          width: 35px;
+          i {
+            color: $brand;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#contactMap {
+  position: relative;
+
+  iframe {
+    filter: grayscale(1);
+  }
+
+  .icon {
+    position: absolute;
+    top: 24%;
+    left: 47%;
+
+    i {
+      font-size: 70px;
+      color: $brand;
+    }
+  }
+}
+
+/* ========================
+contactForm css ends
+========================= */
