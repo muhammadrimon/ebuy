@@ -1,0 +1,153 @@
+@import "../variables";
+@import "../mixin";
+@import "../fonts";
+
+// partial input done
+
+#banner {
+  .banner-slider {
+    position: relative;
+
+    .left-arrow {
+      @include btn40;
+      @include border-light;
+      position: absolute;
+      left: 46.5%;
+      bottom: 30px;
+      z-index: 2;
+      cursor: pointer;
+      @include trans(0.4s);
+
+      &:hover {
+        background: $brand;
+        border-color: $brand;
+      }
+    }
+    .right-arrow {
+      @include btn40;
+      @include border-light;
+      position: absolute;
+      right: 46.5%;
+      bottom: 30px;
+      z-index: 2;
+      cursor: pointer;
+      @include trans(0.4s);
+
+      &:hover {
+        background: $brand;
+        border-color: $brand;
+      }
+    }
+
+    .banner-item {
+      position: relative;
+      z-index: 1;
+      @include banner-over;
+      padding-bottom: 152px;
+
+      .banner-text {
+        h2 {
+          font-size: 70px;
+          @include rale-b;
+          color: $brand;
+          padding-top: 122px;
+        }
+
+        h6 {
+          font-size: 40px;
+          @include rale-r;
+          margin-top: -5px;
+          padding-bottom: 10px;
+        }
+
+        p {
+          font-size: 14px;
+          @include open-r;
+          color: $light;
+          line-height: 24px;
+          padding-bottom: 55px !important;
+        }
+
+        a {
+          @include rale-md;
+          font-size: 16px;
+          line-height: 52px;
+          background: transparent;
+          border: 1px solid #fff;
+          color: #fff;
+          padding: 0 20px !important;
+          @include trans(0.4s);
+
+          &:hover {
+            background: $brand;
+            border-color: $brand;
+          }
+
+          &:first-of-type {
+            margin-right: 26px;
+          }
+        }
+      }
+    }
+    .bg1 {
+      background: url(../images/banner/banner1.jpg) no-repeat center / cover;
+    }
+    .bg2 {
+      background: url(../images/banner/banner2.jpg) no-repeat center / cover;
+    }
+    .bg3 {
+      background: url(../images/banner/banner3.jpg) no-repeat center / cover;
+    }
+  }
+}
+
+#card {
+  background: $light;
+
+  .card-item {
+    position: relative;
+
+    &:hover {
+      h2 {
+        color: $brand;
+      }
+    }
+
+    h2 {
+      @include open-r;
+      font-size: 24px;
+      color: $cldark;
+      padding-top: 30px;
+      @include trans(0.4s);
+    }
+
+    p {
+      @include open-r;
+      font-size: 14px;
+      color: $hbg;
+      line-height: 24px;
+      padding-top: 20px;
+      padding-bottom: 26px !important;
+    }
+
+    &::before {
+      content: "";
+      width: 1px;
+      height: 100%;
+      background: #c4bfbf;
+      position: absolute;
+      top: 0;
+      right: -14px;
+    }
+
+    &.last-item {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+/* ===========================
+banner css ends
+============================ */
