@@ -1,0 +1,29 @@
+@import "../variables";
+@import "../mixin";
+@import "../fonts";
+
+// partial input done;
+
+#product-details {
+  .product-image {
+    .preview-slider {
+      margin-bottom: 10px;
+    }
+
+    .thumbnail-slider {
+      .thumbnail-item {
+        border: 1px solid $fbg;
+        margin: 0 5px;
+        cursor: pointer;
+
+        &.slick-center {
+          border-color: $brand;
+        }
+      }
+    }
+  }
+}
+
+/* ===============================
+product details ends
+================================ */

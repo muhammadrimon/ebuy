@@ -637,3 +637,18 @@ brand slider ends
 /* ===========================
 banner css ends
 ============================ */
+#product-details .product-image .preview-slider {
+  margin-bottom: 10px;
+}
+#product-details .product-image .thumbnail-slider .thumbnail-item {
+  border: 1px solid #353535;
+  margin: 0 5px;
+  cursor: pointer;
+}
+#product-details .product-image .thumbnail-slider .thumbnail-item.slick-center {
+  border-color: #de4644;
+}
+
+/* ===============================
+product details ends
+================================ */
